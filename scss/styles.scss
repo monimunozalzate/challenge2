@@ -70,8 +70,8 @@ main section ul li span{
 main .right{
     background-color:hsl(277, 64%, 61%);
     padding: none;
-    width: 30rem;
-    height: 27.79rem;
+    width: 100%;
+    height: auto;
     display:flex;
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
@@ -79,8 +79,8 @@ main .right{
 main .imgDesktop{
     opacity: 0.5;
     padding: none;
-    width: 30rem;
-    height: 27.79rem;
+    width: 100%;
+    height: auto;
     display:flex;
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
@@ -94,8 +94,10 @@ footer .attribution { font-size: 11px;
 footer .attribution a { 
     color: hsl(228, 45%, 44%);
  }
-//mobile 375px
-@media(max-width: 375px){
+
+//mobile
+
+ @media(max-width: 375px) {
     main{
         flex-direction: column-reverse;
         align-items: stretch;
@@ -121,7 +123,6 @@ footer .attribution a {
     }
     main .left ul{
         flex-direction: column;
-        
         padding: 0%;
     }
     main .left li{
@@ -130,8 +131,8 @@ footer .attribution a {
         text-align: center;
     }
     main .right{
-        width: 21.37rem;
-        height: auto;
+        width: 100%;
+     height: auto;
         border-top-right-radius: 3%;
         border-top-left-radius: 3%;
         border-bottom-right-radius: 0%;
@@ -141,7 +142,8 @@ footer .attribution a {
         display: none;
     }
     main .right .imgMobile{
-        width: 21.37rem;
+        width: 100%;
+        height: auto;
         display: block;
         opacity: 0.5;
         border-top-right-radius: 3%;
@@ -150,25 +152,5 @@ footer .attribution a {
         border-bottom-left-radius: 0%;
     }
 }
-//laptop 1279px
-/*@media(min-width:375px), (max-width: 1279px){
-    main .left{
-        width: 29.93rem;
-    }
-    main .left h1{
-        font-size: 2rem;
-    }
-    main section ul li {
-        margin-right: 2.5rem;
-    }
-    main .right{
-        width: 29.93rem;
-    }
-    main .right .imgDesktop{
-        width: 29.93rem;
-    }
-    main .right .imgMobile{
-        display: none;
-    }
-}*/
+
 
